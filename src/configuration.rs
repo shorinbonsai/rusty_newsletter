@@ -77,7 +77,6 @@ pub fn get_configuration() -> Result<Settings, config::ConfigError> {
     settings.try_deserialize::<Settings>()
 }
 
-/// The possible runtime environment for our application.
 pub enum Environment {
     Local,
     Production,
